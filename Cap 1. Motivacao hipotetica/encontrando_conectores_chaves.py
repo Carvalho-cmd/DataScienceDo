@@ -89,7 +89,7 @@ Podemos tamb√©m encontrar as pessoas mais conectadas - as que possuem o maior n√
 
 total_connections_user = [(user["id"],number_of_friends(user)) for user in users]
 
-total_connections_user.sort(key = lambda ordernarPeloValor: ordernarPeloValor[1], reverse=True) #usa o comando lambda para ordenar pelo valor e traz o resultado o maior pro menor
+total_connections_user.sort(key = lambda ordernarPeloValor: ordernarPeloValor[1], reverse=True) #usa o comando lambda para ordenar pelo valor e traz o resultado do maior pro menor
 
 #print(total_connections_user)
 
@@ -122,13 +122,9 @@ def friends_of_friends(user):
     return Counter(
         foaf_id
         for friend_id in friendships[user_id]
-        for foaf_id in  friendships[friend_id]
+        for foaf_id in friendships[friend_id]
         if foaf_id != user_id
         and foaf_id not in friendships[user_id]
     )
 
 print(friends_of_friends(users[3]))
-
-
-
-
