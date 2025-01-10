@@ -1,0 +1,9 @@
+def soma(num1 = 1, num2 = 1, num3 = 1):
+    return num1 + num2 + num3
+
+valor1 = 4
+valor2 = 2
+valor3 = 3
+
+print(soma(valor1, num3 = valor3))
+
