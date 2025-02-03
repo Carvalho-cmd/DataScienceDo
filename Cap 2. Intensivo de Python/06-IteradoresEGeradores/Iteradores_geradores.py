@@ -32,4 +32,3 @@ def factors(n):
          
 factors_of_20 = factors(20)
 print(next(factors_of_20))
-
